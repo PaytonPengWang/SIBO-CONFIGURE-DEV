@@ -1,0 +1,15 @@
+zuul:
+  ignoredServices: '*'
+  host:
+    connect-timeout-millis: 20000
+    socket-timeout-millis: 20000
+
+  routes:
+
+    configure:
+        path: /config/**
+        url: http://localhost:3000
+        strip-prefix: true
+        sensitiveHeaders:
+server:
+  port: 3001
