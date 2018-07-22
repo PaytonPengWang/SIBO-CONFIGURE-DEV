@@ -13,3 +13,8 @@ zuul:
         sensitiveHeaders:
 server:
   port: 3001
+
+auth:
+  server:
+    getToken: http://localhost:3003/auth/token
+    refershToken: http://localhost:3003/auth/token
