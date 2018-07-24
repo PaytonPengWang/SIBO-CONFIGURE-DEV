@@ -1,0 +1,27 @@
+zuul:
+  ignoredServices: '*'
+  host:
+    connect-timeout-millis: 20000
+    socket-timeout-millis: 20000
+
+  routes:
+
+    bs:
+        path: /bs/**
+        url: http://localhost:8111
+        strip-prefix: true
+        sensitiveHeaders:
+    ms:
+        path: /ms/**
+        url: http://localhost:1801
+        strip-prefix: true
+        sensitiveHeaders:
+server:
+  port: 3001
+
+auth:
+  server:
+    getToken: http://localhost:3003/auth/token
+    refershToken: http://localhost:3003/auth/token
+    whiteList:
+      - /config/master/gateway-dev.json
