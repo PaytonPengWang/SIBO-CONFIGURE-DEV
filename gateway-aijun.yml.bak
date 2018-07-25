@@ -12,34 +12,27 @@ zuul:
         strip-prefix: true
         sensitiveHeaders:
         
-    jc_zt:
-        path: /jc_zt/**
-        url: http://10.10.10.13:8113
-        strip-prefix: true
-        sensitiveHeaders:
-        
     bs_swh:
-        path: /bs_swh/**
+        path: /bs/**
         url: http://10.10.10.16:8115
         strip-prefix: true
         sensitiveHeaders:
         
-    bs_zaj:
-        path: /bs_zaj/**
+    bs:
+        path: /bs/**
         url: http://10.10.10.12:8111
         strip-prefix: true
         sensitiveHeaders:
         
-        
-     ks_zk:
-        path: /ks_zk/**
-        url: http://10.10.10.14:8112
+     jc:
+        path: /jc/**
+        url: http://10.10.10.13:8113
         strip-prefix: true
         sensitiveHeaders:
         
-     bs:
-        path: /bs/**
-        url: http://10.10.10.222:8116
+     ks:
+        path: /ks/**
+        url: http://10.10.10.14:8112
         strip-prefix: true
         sensitiveHeaders:
         
