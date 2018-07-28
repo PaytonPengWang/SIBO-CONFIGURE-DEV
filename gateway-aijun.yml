@@ -5,15 +5,16 @@ zuul:
     socket-timeout-millis: 20000
 
   routes:
-
-    bs:
+   
+     bs:
         path: /bs/**
-        url: http://localhost:8111
+        url: http://10.10.10.222:8116
         strip-prefix: true
         sensitiveHeaders:
-    ms:
+        
+     ms:
         path: /ms/**
-        url: http://localhost:1801
+        url: http://10.10.10.222:1801
         strip-prefix: true
         sensitiveHeaders:
 server:
