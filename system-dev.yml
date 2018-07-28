@@ -1,4 +1,4 @@
 server:
   port: 3004
 mongo:
-  url: mongodb://127.0.0.1:27017/system
+  url: mongodb://127.0.0.1:27017/sibo_system
