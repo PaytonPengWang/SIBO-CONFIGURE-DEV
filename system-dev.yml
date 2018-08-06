@@ -6,24 +6,24 @@ defaultData:
   apps:
     user_center: 
       name: 用户中心
-      config-version: 1
+      configversion: 1
       SRN: user_center
       modules:
-        - {name: 用户管理, access-uri: /user/list, SRN: user_manager}
-        - {name: 角色管理, access-uri: /role/list, SRN: role_manager}
+        - {name: 用户管理,accessuri: /user/list, SRN: user_manager}
+        - {name: 角色管理, accessuri: /role/list, SRN: role_manager}
     app_center:
       name: 应用中心
-      config-version: 1
+      configversion: 1
       SRN: app_center
       modules:
-        - {name: 挂载, access-uri: /app/list, SRN: load}
-        - {name: 卸载, access-uri: /app/unload/:1, SRN: unload}
-        - {name: 更新, access-uri: /app/update/:2, SRN: update}
-        - {name: 查看, access-uri: /app/view/:3, SRN: view}
+        - {name: 挂载, accessuri: /app/list, SRN: load}
+        - {name: 卸载, accessuri: /app/unload/:1, SRN: unload}
+        - {name: 更新, accessuri: /app/update/:2, SRN: update}
+        - {name: 查看, accessuri: /app/view/:3, SRN: view}
     system_center:
       name: 系统管理
-      config-version: 1
+      configversion: 1
       SRN: system
       modules:
-        - {name: 字典管理, access-uri: /dictionaries/list, SRN: dict}
-        - {name: 组织管理, access-uri: /organization/list, SRN: org}
+        - {name: 字典管理, accessuri: /dictionaries/list, SRN: dict}
+        - {name: 组织管理, accessuri: /organization/list, SRN: org}
