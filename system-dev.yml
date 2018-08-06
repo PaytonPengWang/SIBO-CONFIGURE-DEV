@@ -17,9 +17,9 @@ defaultData:
       SRN: app_center
       modules:
         - {name: 挂载,access-uri: /app/list,SRN: load}
-        - {name: 卸载,access-uri: “/app/unload/:1”,SRN: unload}
-        - {name: 更新,access-uri: ”/app/update/:2“,SRN: update}
-        - {name: 查看,access-uri: “/app/view/:3”,SRN: view}
+        - {name: 卸载,access-uri: "/app/unload/:1",SRN: unload}
+        - {name: 更新,access-uri: "/app/update/:2",SRN: update}
+        - {name: 查看,access-uri: "/app/view/:3",SRN: view}
     system_center:
       name: 系统管理
       config-version: 1
