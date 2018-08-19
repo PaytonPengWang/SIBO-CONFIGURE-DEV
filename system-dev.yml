@@ -9,6 +9,7 @@ defaultData:
       config-version: 1
       SRN: user_center
       rootVersion: 1
+      rootDate: true
       modules:
         - {name: 用户管理,access-uri: /user/list,SRN: user_manager}
         - {name: 角色管理,access-uri: /role/list,SRN: role_manager}
@@ -17,6 +18,7 @@ defaultData:
       config-version: 1
       SRN: app_center
       rootVersion: 1
+      rootDate: true
       modules:
         - {name: 挂载,access-uri: /app/list,SRN: load}
         - {name: 卸载,access-uri: "/app/unload/:1",SRN: unload}
@@ -27,6 +29,7 @@ defaultData:
       config-version: 1
       SRN: system
       rootVersion: 1
+      rootDate: true
       modules:
         - {name: 字典管理,access-uri: /dictionaries/list,SRN: dict}
         - {name: 组织管理,access-uri: /organization/list,SRN: org}
