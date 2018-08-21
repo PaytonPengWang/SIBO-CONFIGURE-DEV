@@ -3,13 +3,12 @@ server:
 mongo:
   url: mongodb://127.0.0.1:27017/sibo_system
 defaultData:
+  rootVersion: 1
   apps:
     user_center: 
       name: 用户中心
       config-version: 1
       SRN: user_center
-      rootVersion: 1
-      rootDate: true
       modules:
         - {name: 用户管理,access-uri: /user/list,SRN: user_manager}
         - {name: 角色管理,access-uri: /role/list,SRN: role_manager}
@@ -17,8 +16,6 @@ defaultData:
       name: 应用中心
       config-version: 1
       SRN: app_center
-      rootVersion: 1
-      rootDate: true
       modules:
         - {name: 挂载,access-uri: /app/list,SRN: load}
         - {name: 卸载,access-uri: "/app/unload/:1",SRN: unload}
@@ -28,8 +25,6 @@ defaultData:
       name: 系统管理
       config-version: 1
       SRN: system
-      rootVersion: 1
-      rootDate: true
       modules:
         - {name: 字典管理,access-uri: /dictionaries/list,SRN: dict}
         - {name: 组织管理,access-uri: /organization/list,SRN: org}
